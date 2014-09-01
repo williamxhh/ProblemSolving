@@ -5,7 +5,8 @@ public class Test {
 	public static void main(String[] args) {
 //		Storage storage = new StorageWaitNotify();
 //		Storage storage = new StorageLock();
-		Storage storage = new StorageBlockingQueue();
+//		Storage storage = new StorageBlockingQueue();
+		Storage storage = new StorageSemaphore();
 		
 		
 		ExecutorService executor = Executors.newCachedThreadPool();
